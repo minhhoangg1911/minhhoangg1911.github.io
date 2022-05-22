@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meipaly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fab fa-atlassian"></i>
+                <span>Meipaly</span>
+            </a>
+            <nav class="navbar">
+                <a href="#">HOME</a>
+                <a href="#">SERVICE</a>
+                <a href="#">SHOWCASE</a>
+                <a href="#">BLOG</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="carousel">
+        <div class="container">
+            <p>WELCOME TO MEIPALY AGENCY</p>
+            <h1>
+                SMART WEB <br/>
+                DESIGN AGENCY
+            </h1>
+            <button>Read More</button>
+            <i class="fa-solid fa-angle-down carousel__animate"></i>
+        </div>
+    </section>
+
+    <section class="service"></section>
+
+    <section class="portfolio">
+        <header class="title">
+            <div class="container">
+                <span> OUR PORTFOLIO</span>
+                <h1>WORK SHOWCASE</h1>
+                <p>The sad life images in modern society speak of the pressure of people and the future</p>
+            </div>
+         </header>
+    
+         <main class="main">
+             <div class="container">
+                <div class="row">
+    
+                    <div class="col">
+                        <div class="item">
+                            <img src="http://media.bizwebmedia.net/sites/76685/data/Upload/2015/6/cach_chinh_anh_trang_den_cho_photoshop__1.jpg" alt="" />
+                            <div class="info">
+                                <div class="controls">
+                                    <i class="fa-solid fa-search-plus"></i>
+                                </div>
+                                <div class="name">
+                                    <span>LOGO</span>
+                                    <h1>Sad</h1>
+                                </div>
+                            </div>
+       
+                        </div>
+       
+                    </div>
+                    <div class="col">
+                       <div class="item">
+                           <img src="https://lbm.vn/wp-content/uploads/2013/02/den-trang-3.jpg" alt="" />
+                           <div class="info">
+                               <div class="controls">
+                                   <i class="fa-solid fa-search-plus"></i>
+                               </div>
+                               <div class="name">
+                                   <span>LOGO</span>
+                                   <h1>Grass</h1>
+                               </div>
+                           </div>
+       
+                       </div>
+       
+                   </div>
+                   <div class="col">
+                       <div class="item">
+                           <img src="data:image/jpeg;base64,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" alt="" />
+                           <div class="info">
+                               <div class="controls">
+                                   <i class="fa-solid fa-search-plus"></i>
+                               </div>
+                               <div class="name">
+                                   <span>LOGO</span>
+                                   <h1> flowers </h1>
+                               </div>
+                           </div>
+                       </div>
+       
+                   </div>
+                   <div class="col">
+                       <div class="item">
+                           <img src="https://meta.vn/Data/image/2021/04/02/anh-trang-05.jpg" alt="" />
+                           <div class="info">
+                               <div class="controls">
+                                   <i class="fa-solid fa-search-plus"></i>
+                               </div>
+                               <div class="name">
+                                   <span>LOGO</span>
+                                   <h1>Street</h1>
+                               </div>
+                           </div>
+       
+                       </div>
+       
+                   </div>
+                   <div class="col">
+                       <div class="item">
+                           <img src="https://shop.photozone.com.vn/wp-content/uploads/2016/03/kham-pha-ki-thuat-chup-anh-trang-den-hay-nhat-4.jpg" alt="" />
+                           <div class="info">
+                               <div class="controls">
+                                   <i class="fa-solid fa-search-plus"></i>
+                               </div>
+                               <div class="name">
+                                   <span>LOGO</span>
+                                   <h1>Cotton mop</h1>
+                               </div>
+                           </div>
+       
+                       </div>
+       
+                   </div>
+                   <div class="col">
+                       <div class="item">
+                           <img src="https://sohbetv1.com/wp-content/uploads/2020/11/mot-so-kinh-nghiem-chup-anh-den-trang-khi-anh-sang-yeu-1.jpg" alt="" />
+                           <div class="info">
+                               <div class="controls">
+                                   <i class="fa-solid fa-search-plus"></i>
+                               </div>
+                               <div class="name">
+                                   <span>LOGO</span>
+                                   <h1>Child</h1>
+                               </div>
+                           </div>
+       
+                       </div>
+       
+                   </div>
+                   
+                </div>
+             </div>
+         </main>
+         <!-- <footer></footer> -->
+    </section>
+     
+
+    <section class="blog">
+        <header class="title">
+            <div class="container">
+                <span> OUR NEW & ARTICLE</span>
+                <h1> LATEST ANIME POSTS </h1>
+                <p>sad anime images talk about the closed life of introverts</p>
+            </div>
+         </header>
+
+         <main class="main">
+            <div class="row">
+                <div class="item item-1">
+                    <img src="https://vuongquocdongu.com/wp-content/uploads/2022/02/anh-anime-buon-3-780x470.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://meta.vn/Data/image/2021/08/03/anh-anime-buon-4.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://truongthinh.info/wp-content/uploads/2021/08/03/04/anime-buon-hinh-anh-anime-buon-tam-trang-co-don-cho-nam-nu-6.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://truongthinh.info/wp-content/uploads/2021/08/03/04/anime-buon-hinh-anh-anime-buon-tam-trang-co-don-cho-nam-nu-3.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/b6/86/b9/b686b96f5688aa783ca76db1593fbe48.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/a2/6b/d3/a26bd3b88f30608733ab7cdc630066e6.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://diendanseovietnam.edu.vn/anh-hoat-hinh-con-trai/imager_27538.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://printgo.vn/uploads/media/798682/anh-anime-nam-buon-7_1637288317.jpg" alt=""/>
+                </div>
+                <div class="item item-9">
+                    <img src="https://demoda.vn/wp-content/uploads/2022/03/anh-anime-ngau-1.jpg" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="https://hinhnen123.com/wp-content/uploads/2021/06/HInh-anh-anime-nam-buon-27.jpg" alt=""/>
+                </div>
+                
+            </div>
+         </main>
+    </section>
+
+    <section class="statistic"></section>
+    
+    <section class="experience">
+        <header class="title">
+            <div class="container">
+                <span>How Do We Works</span>
+                <h1>DIGITAL EXPERIENCE</h1>
+                <p>We are committed to providing our customers with the highest quality products </p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <!-- controls autoplay muted loop poster="" -->
+                <iframe class="youtube-video" width="1180" height="720" src="https://www.youtube.com/embed/ZL2I9l5jcMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+        </main>
+    </section>
+    <footer class="footer"> 
+        <div class="contact">
+    <div class="container">
+      <div class="contac-layout">
+      <div class="contact-1">
+        <h1>Contact Us</h1>
+        
+        <span> <i class="fa fa-seedling"></i> Estate Business, #32841 block, #221DRS Real estate business building, UK.</span>
+        <span> +(21)-255-999-8888</span>
+        <a>corporate-mail@support.com</a>
+      </div>
+      <div class="contact-1">
+        <h1>Featured Links</h1>
+        <a>Graduation</a>
+        <a>Admissions</a>
+        <a>Book Store</a>
+        <a>international</a>
+        <a>Courses</a>
+      </div>
+      <div class="contact-1">
+        <h1>Quick Links</h1>
+        <a>Home</a>
+        <a>About</a>
+        <a>Services</a>
+        <a>Blog</a>
+        <a>contact</a>
+      </div>  
+    </div>
+    <hr>
+      <div class="contact-2">
+        <a>@ 2022 Mastery. All right reserved | Designed by W3layouts </a>
+      </div>
+    </div>
+  </div>
+        
+    </footer>
+
+</body>
+</html>
+
+
 
