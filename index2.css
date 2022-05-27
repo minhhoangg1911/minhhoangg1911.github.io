@@ -1,0 +1,234 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    
+}
+
+.header .logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .logo span {
+    
+    top: 5px;
+}
+
+.header .navbar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 1s;
+}
+
+.header .navbar a:hover {
+    color: #e62b4a;
+
+}
+
+/* flexbox */
+.header .container {
+   
+    height: 80px;
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-between ;
+    align-items: center ;
+
+}
+
+.carousel {
+    background-image: url(https://anhdepbonphuong.com/wp-content/uploads/2015/11/hinh-anh-chia-tay-buon-512-16.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+.carousel .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.carousel p {
+    font-size: 20px;
+}
+
+.carousel h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.carousel button {
+    background-color: #e62b4a;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.carousel button:hover {
+    background-color: blue;
+}
+
+.carousel i {
+    font-size: 25px;
+}
+
+.carousel__animate {
+    animation-name: animate_fade;
+
+    animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes animate_fade { 
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100px);
+        opacity: 0.1;
+
+    }
+  
+  
+
+    
+
+ 
+}
+.contact .container {
+    background-color: lightblue;
+}
+
+.contact .container .contac-layout {
+    display:flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.contact .container .contact-1 {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contact .container .contact-1 span {
+    padding-top: 10px;
+}
+
+.contact .container .contact-1 a {
+    padding-top:10px;
+}
+
+.contact .container .contact-2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+}
+
+.skill {
+    height: 500px; 
+/*     background-image: url(../img/hinhanhbuon.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+   margin: 20px;
+  padding-bottom: 40px;
+    
+}
+
+
+
+.skill .header1 {
+    text-align: center;    
+    align-items: center;
+    padding-top: 50px;
+    color:#ffffff;
+    z-index: 10;
+    position: relative;
+   
+}
+
+.skill .main {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    
+}
+
+
+.skill .main h1 {
+    color:#ffffff;
+    z-index: 3;
+}
+
+
+.skill .container .main p {
+    color: #ffffff;
+   
+}
+
+.skill .main .row  {
+    height: 200px;
+    width: 25%;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    margin: 20px;
+  padding:40px;
+}
+
+.skill .main .row i {
+    color:#35a22c;
+    
+}
+
+
+.skill::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
