@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,146 @@
     <title>Minh Hoàng website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
-  
-    <script src="index1.js" ></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet" /> -->
 
-    <link rel="stylesheet" href="index.css" />
-   
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    
+
+
+
+    <link rel="stylesheet" href="./css/home.css" />
 </head>
+
 <body>
-    <header class="header"> 
+    <header id="header" class="header ">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <i class="fab fa-atlassian"></i>
-                 <span>Minh Hoàng</span>
+                <span>Minh Hoàng</span>
             </a>
             <nav class="navbar">
-                <a href="index.html">Trang Chủ</a>
-                <a href="index2.html">Kỹ Năng</a>
-                <a href="index1.html">Đăng ký thành viên</a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#"> 
+                    HOME
+                    <!-- ::after -->
+                </a>
+                <a href="#">SERVICE</a>
+                <a href="#portfolio">SHOWCASE</a>
+                <a href="#">BLOG</a>
+                <a href="#">ABOUT US</a>
+                <a href="#contact">CONTACT</a>
             </nav>
+            <button class="navbar-toggler">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <section class="carousel">
         <div class="container">
-            <p>XIN CHÀO ĐẾN VỚI TRANG WEB CỦA TÔI</p>
+            <p>WELCOME TO MEIPALY AGENCY</p>
             <h1>
-                TRANG WEB THÔNG MINH <br/>
-               
+                <!-- ::before -->
+                SMART WEB <br>
+                DESIGN AGENCY
+                <!-- ::after -->
             </h1>
-            <button>Đọc thêm</button>
+            <button>Read More</button>
             <i class="fa-solid fa-angle-down carousel__animate"></i>
+
+        </div>
+        
+    </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="service__slider">
+
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-donate"></i>
+                        <p>Donate</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fab fa-apple"></i>
+                        <p>Apple</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fab fa-app-store"></i>
+                        <p>App-store</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fab fa-android"></i>
+                        <p>Android</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fab fa-angellist"></i>
+                        <p>Angllist</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-bell"></i>
+                        <p>Bell</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-book"></i>
+                        <p>Book</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-camera-retro"></i>
+                        <p>Camera-retro</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-car"></i>
+                        <p>Car</p>
+                    </div>
+                </div>
+                <div class="service__item">
+                    <div class="item__content">
+                        <i class="fa fa-city"></i>
+                        <p>City</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
     </section>
-  
-  
-  <section class="blog animate__animated animate__bounceInDown wow ">
-        <header class="title">
-            <div class="container">
-                
-    
 
-  <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
         <header class="title">
             <div class="container">
-                <span></span>
-                <h1>Hình Ảnh Buồn</h1>
-                <p>Các Hình Tiêu Biểu</p>
+                <span> OUR PORTFOLIO</span>
+                <h1>WORK SHOWCASE</h1>
+                <p>The sad life images in modern society speak of the pressure of people and the future</p>
             </div>
         </header>
 
@@ -68,7 +157,7 @@
 
                     <div class="col">
                         <div class="item">
-                            <img src="https://imgt.taimienphi.vn/cf/Images/tt/2020/7/15/mau-hinh-anh-dai-dien-facebook-buon-khoc-4.jpg" alt="" />
+                            <img src="./img/1.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -84,7 +173,7 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="https://tmsquynhon.com.vn/wp-content/uploads/2021/11/HC3ACnh-E1BAA3nh-avatar-C491en-trE1BAAFng-17.jpg" alt="" />
+                            <img src="./img/2.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -100,7 +189,7 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="https://amadegraphic.com/wp-content/uploads/2022/02/Hinh-nen-den-trang-buon-cuc-dep-5.jpg" alt="" />
+                            <img src="./img/3.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -116,7 +205,7 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="https://khoanh24.com/uploads/w750//2020/03/19/hinh-anh-tam-trang-buon-nhat_d745cc03b.jpg" alt="" />
+                            <img src="./img/4.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -132,7 +221,7 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="https://laodongdongnai.vn/wp-content/uploads/Hinh-nam-Anime-buon.jpg" alt="" />
+                            <img src="./img/5.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -148,7 +237,7 @@
                     </div>
                     <div class="col">
                         <div class="item">
-                            <img src="https://allimages.sgp1.digitaloceanspaces.com/anhdep247net/2022/02/1643910510_294_Anh-Avatar-den-%E2%80%93-Hinh-dai-dien-den-the-hien.jpg" alt="" />
+                            <img src="./img/6.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
                                     <i class="fa-solid fa-search-plus"></i>
@@ -168,91 +257,172 @@
         </main>
         <!-- <footer></footer> -->
     </section>
-              
-                          <h1> Hình Ảnh Anime Tiêu Biểu </h1>
-                
+
+
+    <section class="blog animate__animated animate__bounceInDown wow ">
+        <header class="title">
+            <div class="container">
+                <span> OUR NEW & ARTICLE</span>
+                <h1> LATEST ANIME POSTS </h1>
+                <p>sad anime images talk about the closed life of introverts</p>
             </div>
         </header>
 
         <main class="main">
             <div class="row">
                 <div class="item item-1">
-                    <img src="https://bigdata-vn.com/wp-content/uploads/2021/10/1633240564_786_Kho-999-anh-buon-hoat-hinh-dep-nhat-xem-muon.jpg" alt="" />
+                    <img src="./img/1.1.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://thao68.com/wp-content/uploads/2021/12/anh-anime-nam-buon-3.jpg" alt="" />
+                    <img src="./img/1.2.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/02/1644219315_181_Hinh-anh-anime-buon-co-don-day-tam-trang-dep.jpg" alt="" />
+                    <img src="./img/1.3.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="http://nhandaovadoisong.com.vn/wp-content/uploads/2019/05/anh-anime-buon-18.jpg" alt="" />
+                    <img src="./img/1.4.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://thiepnhanai.com/wp-content/uploads/2021/05/hinh-anh-anime-boy-7.jpg" alt="" />
+                    <img src="./img/1.5.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://symbols.vn/wp-content/uploads/2021/11/Anh-Anime-Boy-Buon-that-tinh.jpg" alt="" />
+                    <img src="./img/1.6.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://recmiennam.com/wp-content/uploads/2018/02/anime-buon-26.jpg" alt="" />
+                    <img src="./img/1.7.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://bigdata-vn.com/wp-content/uploads/2021/09/1632862470_374_Hinh-anh-anime-khoc-dep.jpg" alt="" />
+                    <img src="./img/1.8.jpg" alt="" />
                 </div>
                 <div class="item item-9">
-                    <img src="https://olptienganh.vn/wp-content/uploads/2021/12/1640523009_489_Hinh-anh-Anime-buon-co-don-that-tinh-dep-nhat.jpg" alt="" />
+                    <img src="./img/1.9.jpg" alt="" />
                 </div>
                 <div class="item">
-                    <img src="https://symbols.vn/wp-content/uploads/2021/11/Hinh-Anime-Nam-Buon-khoc-duoi-mua.jpg" alt="" />
+                    <img src="./img/1.10.jpg" alt="" />
                 </div>
 
             </div>
         </main>
     </section>
-              
-   
-    <footer class="footer"> 
-        <div class="contact">
-    <div class="container">
-      <div class="contac-layout">
-      <div class="contact-1">
-        <h1>Liên Hệ</h1>
-        
-        <span> <i class="fa fa-seedling"></i>
-          <b>Email</b>: <a href="minhhoangg1911@gmail.com">minhhoangg1911@gmail.com</a> 
-        </span>
-        <span> <b>SĐT: <a
-                href="tel:0762509854">0762509854</a></b>
-          
-        </span>
-        
-      </div>
-      <div class="contact-1">
-        <h1>Liên Kết Nổi Bật</h1>
-        <a>Tốt Nghiệp</a>
-        <a>Tuyển Sinh</a>
-        <a>Nhà Sách</a>
-        <a>Quốc Tế</a>
-        <a>Các Khóa Học</a>
-      </div>
-      <div class="contact-1">
-        <h1><a href="index.html">Trang Chủ</a></h1>
-        <a href="index2.html">Kỹ Năng</a>
-        <a href="index1.html">Đăng ký thành viên</a>
-        <a></a>
-        <a></a>
-        <a></a>
-      </div>  
-    </div>
-    <hr>
-      <div class="contact-2">
-        <a>@ 2022 Được thiết kế bởi Minh Hoàng </a>
-      </div>
-    </div>
-  </div>
-        
-    </footer>
- 
+
+    <section class="statistic"></section>
+    <section class="experience">
+        <header class="title">
+            <div class="container">
+                <span>How Do We Works</span>
+                <h1>DIGITAL EXPERIENCE</h1>
+                <p>We are committed to providing our customers with the highest quality products </p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <!-- controls autoplay muted loop poster="" -->
+                <iframe class="youtube-video" width="1180" height="720" src="https://www.youtube.com/embed/ZL2I9l5jcMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            </div>
+        </main>
+    </section>
+    <section id="contact" class="contact">
+        <header class="title">
+            <div class="container">
+                <h1>CONTACT</h1>
+                <p>
+                    Thank you for your interest in our website & our services . If you have any questions, please write
+                    us a message now!
+                </p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-left">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.742979854022!2d109.16920871476464!3d12.400131691232597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31704144b17811b3%3A0x4bcead9902bdd31c!2zQ2jhu6MgVMOibiDEkOG6o28!5e0!3m2!1svi!2s!4v1650883598539!5m2!1svi!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-right" style="margin-bottom: 300px;">
+                        <form>
+                            <!-- VALIDATION : required, minlength, maxlength, min, max, patten -->
+                            <input type="text" placeholder="Username"
+                             required 
+                             minlength="8" 
+                             maxlength="15"
+                             pattern="[A-Za-z]+" />
+
+                            <input type="email" />
+                            <textarea placeholder="Message" rows="10"></textarea>
+                            <button type="submit">Submit</button>
+
+
+
+                            <!-- <input type="number" />
+                            <input type="password" />
+                            <input type="file" />
+                            <br />
+                            <input id="male" type="radio" name="sex" />
+                            <label for="male">Nam</label>
+
+                            <input type="radio" name="sex" />
+                            <label>Nữ</label>
+                            <br />
+                            <input type="checkbox" />
+                            <label>Đá bóng</label>
+                            <input type="checkbox" />
+                            <label>Tập gym</label>
+                            <input type="checkbox" />
+                            <label>Chơi game</label> -->
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer class="footer"> </footer>
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".service__slider").slick({
+                // setting-name: setting-value
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+                responsive: [
+          {
+                    breakpoint: 576,
+                    settings: {
+                     slidesToShow: 1,
+                     slidsToScroll: 1
+          },
+          },
+      ],
+            });
+        });
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    new WOW().init();
+    </script>
+
 </body>
+
 </html>
