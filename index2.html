@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,67 @@
     <title>Minh Hoàng website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet" /> -->
 
-    <link rel="stylesheet" href="index2.css" />
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    
+
+
+
+    <link rel="stylesheet" href="./css/home.css" />
 </head>
+
 <body>
-    <header class="header"> 
+    <header id="header" class="header ">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
                 <i class="fab fa-atlassian"></i>
                 <span>Minh Hoàng</span>
             </a>
             <nav class="navbar">
-                <a href="index.html">Trang Chủ</a>
-                <a href="index2.html">Kỹ Năng</a>
-                <a href="index1.html">Đăng ký thành viên</a>
+                <a href="#"> 
+                    Trang Chủ
+                    <!-- ::after -->
+                </a>
+                <a href="#service">Dịch Vụ</a>
+                <a href="#portfolio">Ảnh Buồn</a>
                 <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#blog">Kho</a>
+                <a href="#contact">Liên lạc</a>
+                <a href="student.html">Bài Tập</a>
             </nav>
+            <button class="navbar-toggler">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <section class="carousel">
         <div class="container">
-            <p>XIN CHÀO ĐẾN VỚI TRANG WEB CỦA TÔI</p>
+            <p>Chào Mừng Bạn Đến Trang Web Của Tôi </p>
             <h1>
-                TRANG WEB THÔNG MINH <br/>
+                <!-- ::before -->
+                Web Thông Minh  <br>
                
+                <!-- ::after -->
             </h1>
-            <button>Đọc thêm</button>
+            <button>Đọc Thêm</button>
             <i class="fa-solid fa-angle-down carousel__animate"></i>
+
         </div>
+        
     </section>
 
   <section class="skill">
@@ -74,13 +102,75 @@
             </div>
         </div>
     </section>
-   
+  
+    
+    <section id="contact" class="contact">
+        <header class="title">
+            <div class="container">
+                <h1>Liên Hệ</h1>
+                <p>
+                    Cảm ơn bạn đã quan tâm đến trang web & dịch vụ của chúng tôi. Nếu bạn có bất kỳ câu hỏi nào, vui lòng viết
+                    cho chúng tôi một tin nhắn bây giờ!
+                </p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-left">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.742979854022!2d109.16920871476464!3d12.400131691232597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31704144b17811b3%3A0x4bcead9902bdd31c!2zQ2jhu6MgVMOibiDEkOG6o28!5e0!3m2!1svi!2s!4v1650883598539!5m2!1svi!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-right" style="margin-bottom: 300px;">
+                        <form>
+                            <!-- VALIDATION : required, minlength, maxlength, min, max, patten -->
+                            <input type="text" placeholder="Username"
+                             required 
+                             minlength="8" 
+                             maxlength="15"
+                             pattern="[A-Za-z]+" />
+
+                            <input type="email" />
+                            <textarea placeholder="Message" rows="10"></textarea>
+                            <button type="submit">Submit</button>
+
+
+
+                            <!-- <input type="number" />
+                            <input type="password" />
+                            <input type="file" />
+                            <br />
+                            <input id="male" type="radio" name="sex" />
+                            <label for="male">Nam</label>
+
+                            <input type="radio" name="sex" />
+                            <label>Nữ</label>
+                            <br />
+                            <input type="checkbox" />
+                            <label>Đá bóng</label>
+                            <input type="checkbox" />
+                            <label>Tập gym</label>
+                            <input type="checkbox" />
+                            <label>Chơi game</label> -->
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
     <footer class="footer"> 
-        <div class="contact">
+        <div class="footer-contact">
     <div class="container">
-      <div class="contac-layout">
-      <div class="contact-1">
-        <h1>Liên Hệ</h1>
+      <div class="footer-layout">
+      <div class="footer-1">
+        <h1>Thông Tin Chi Tiết</h1>
         
         <span> <i class="fa fa-seedling"></i>
           <b>Email</b>: <a href="minhhoangg1911@gmail.com">minhhoangg1911@gmail.com</a> 
@@ -91,7 +181,7 @@
         </span>
         
       </div>
-      <div class="contact-1">
+      <div class="footer-1">
         <h1>Liên Kết Nổi Bật</h1>
         <a>Tốt Nghiệp</a>
         <a>Tuyển Sinh</a>
@@ -99,25 +189,61 @@
         <a>Quốc Tế</a>
         <a>Các Khóa Học</a>
       </div>
-      <div class="contact-1">
-          <h1><a href="index.html">Trang Chủ</a></h1>
+      <div class="footer-1">
+        <h1><a href="index.html">Trang Chủ</a></h1>
         <a href="index2.html">Kỹ Năng</a>
-        <a href="index1.html">Đăng ký thành viên</a>
+        <a href="student.html">Bài Tập</a>
         <a></a>
         <a></a>
         <a></a>
       </div>  
     </div>
     <hr>
-      <div class="contact-2">
+      <div class="footer-2">
         <a>@ 2022 Được thiết kế bởi Minh Hoàng </a>
       </div>
     </div>
   </div>
         
     </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".service__slider").slick({
+                // setting-name: setting-value
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+                responsive: [
+          {
+                    breakpoint: 576,
+                    settings: {
+                     slidesToShow: 1,
+                     slidsToScroll: 1
+          },
+          },
+      ],
+            });
+        });
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    new WOW().init();
+    </script>
+
 </body>
+
 </html>
