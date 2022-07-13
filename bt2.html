@@ -18,15 +18,15 @@
                 width: 60rem;
                 height: 30rem;
                 margin: auto;
-                background: lightblue;
+                background:lightgray;
             }
             .input-data {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                padding: 2em;
-                border-radius: 7%;
+                /* /* padding: 2em; */
+                border-radius: 7%;  
             }
             input[type="submit"],
             input[type="reset"] {
@@ -52,18 +52,17 @@
             }
             .button {
                 padding: 0;
-              
+               
             }
             .button input {
                 border-radius: 7px;
-                
             }
             .output-data {
                 display: flex;
                 align-items: center;
                 width: 100%;
-                background:blue;
-                border-radius:;
+                background:lightblue;
+                /* border-radius: 7%; */
             }
             .content > * {
                 padding-left: 2em;
@@ -100,11 +99,11 @@
                         <label for="gender">Giới Tính:</label>
                         <div class="flex gender">
                             <div class="male">
-                                <input type="radio" name="gender" value="Male" id="user-gender">
+                                <input type="radio" name="gender" value="Nam" id="user-gender">
                                 <label for="male">Nam</label>
 </div>
                             <div class="female">
-                                <input type="radio" name="gender" value="Female" id="user-gender">
+                                <input type="radio" name="gender" value="Nữ" id="user-gender">
                                 <label for="female">Nữ</label>
                             </div>
                         </div>
@@ -113,21 +112,21 @@
                             <label for="nation">Quốc tịch:</label>
                             <select name="nationality" id="user-nation">
                                 <option>Vietnam</option>
-                                <option>Spain</option>
-                                <option>America (USA)</option>
                                 <option>Germany</option>
-                                <option>England</option>
+                                <option>Portural</option>
+                                <option>Spain</option>
+                                <option>America</option>
                             </select>
                         </div>
 
                         <label for="hobby">Sở thích</label>
                         <div class="flex hobby">
                             <div class="coding">
-                                <input type="checkbox" name="hobby" value="Coding">
+                                <input type="checkbox" name="hobby" value="Đá Bóng">
                                 <label for="coding">Đá Bóng</label>
                             </div>
                             <div class="travel">
-                                <input type="checkbox" name="hobby" value="Travel">
+                                <input type="checkbox" name="hobby" value="Lập Trình">
                                 <label for="travel">Lập Trình</label>
                             </div>
                         </div>
@@ -157,19 +156,19 @@
         const form = document.getElementById('user-detail').addEventListener('submit', (e) => {
             e.preventDefault();
             const name = document.getElementById('user-name').value;
-            document.querySelector('.content-name').textContent = Name: ${name};
+            document.querySelector('.content-name').textContent = `Name: ${name}`;
 
             const email = document.getElementById('user-email').value;
-            document.querySelector('.content-email').textContent = Email: ${email};
+            document.querySelector('.content-email').textContent = `Email: ${email}`;
 
             const genders = document.getElementsByName('gender');
             genders.forEach(gender => {
                 if (gender.checked == true) {
-                    document.querySelector('.content-gender').textContent = Gender: ${gender.value};
+                    document.querySelector('.content-gender').textContent = `Gender: ${gender.value}`;
                 };
             });
 const nation = document.getElementById('user-nation').value;
-            document.querySelector('.content-nation').textContent = Nationality: ${nation};
+            document.querySelector('.content-nation').textContent = `Nationality: ${nation}`;
 
             const hobbies = document.getElementsByName('hobby');
             hobbyArray = [];
@@ -178,7 +177,7 @@ const nation = document.getElementById('user-nation').value;
                     hobbyArray.push(hobby.value);
                 };
             });
-            document.querySelector('.content-hobby').textContent = Hobby: ${hobbyArray.join(', ')};
+            document.querySelector('.content-hobby').textContent = `Hobby: ${hobbyArray.join(', ')}`;
         });
     </script>
 </html>
