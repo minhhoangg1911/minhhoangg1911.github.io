@@ -24,10 +24,13 @@
   />
 
     
+        
 
 
+    <link rel="stylesheet" href="./css/home.css" />
 
-    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -37,28 +40,39 @@
                 <i class="fab fa-atlassian"></i>
                 <span>Minh Hoàng</span>
             </a>
-            <nav class="navbar">
-                <a href="index.html"> 
+
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+
+            <div class="siderbar">
+                <!-- <div class="header-bar">My App</div> -->
+                <ul>
+                    <li><a href="#"><i class="fas fa-qrcode"> </i>Trang Chủ</a></li>
+                    <li><a href="#"><i class="fas fa-link"> </i>Dịch Vụ</a></li>
+                    <li><a href="#"><i class="fas fa-stream"> </i>Kho</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"> </i>Liên Lạc</a></li>
+                    <li><a href="#"><i class="fas fa-sliders-h"> </i>Kỹ Năng</a></li>
+                </ul>
+            </div>
+
+            <!-- <nav class="navbar">
+                <a href="#"> 
                     Trang Chủ
-                    <!-- ::after -->
-                </a>
-                <a href="#service">Ứng Dụng</a>
-                <a href="#portfolio">Kho</a>
-                <a href="#blog"></a>
+                    
+                <!-- </a>
+                <a href="#service">Dịch Vụ</a>
+                <a href="#portfolio">Ảnh Buồn</a>
+                <a href="#"></a>
+                <a href="#blog">Kho</a>
                 <a href="#contact">Liên lạc</a>
-                 <a href="index2.html">Kỹ Năng</a>
-                <a href="student.html"></a>
             </nav>
-            <div>
-            <button class="menu-btn">
+            <button class="navbar-toggler">
                 <i class="fa-solid fa-bars"></i>
-                
-                
-            </button>
-          
+            </button>  -->
             
-        </div>
-        </div>
     </header>
 
     <section class="carousel">
@@ -153,7 +167,7 @@
         <header class="title">
             <div class="container">
                 <span> Bài Viết & Mới Của Chúng Tôi</span>
-                <h1>Thư Mục</h1>
+                <h1>Công Việc</h1>
                 <p>Hình ảnh buồn về cuộc sống xã hội hiện đại</p>
             </div>
         </header>
@@ -167,7 +181,7 @@
                             <img src="./img/1.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -183,7 +197,7 @@
                             <img src="./img/2.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -199,7 +213,7 @@
                             <img src="./img/3.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -215,7 +229,7 @@
                             <img src="./img/4.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -231,7 +245,7 @@
                             <img src="./img/5.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -247,7 +261,7 @@
                             <img src="./img/6.jpg" alt="" />
                             <div class="info">
                                 <div class="controls">
-<!--                                     <i class="fa-solid fa-search-plus"></i> -->
+                                    <!-- <i class="fa-solid fa-search-plus"></i> -->
                                 </div>
                                 <div class="name">
                                     <span>LOGO</span>
@@ -361,7 +375,7 @@
                              maxlength="15"
                              pattern="[A-Za-z]+" />
 
-                            <input type="email" placeholder="Email" />
+                            <input type="email" />
                             <textarea placeholder="Message" rows="10"></textarea>
                             <button type="submit">Submit</button>
 
@@ -397,7 +411,7 @@
     <div class="container">
       <div class="footer-layout">
       <div class="footer-1">
-        <h1>Thông Tin Chi Tiết</h1>
+        <h1>Liên Hệ</h1>
         
         <span> <i class="fa fa-seedling"></i>
           <b>Email</b>: <a href="minhhoangg1911@gmail.com">minhhoangg1911@gmail.com</a> 
@@ -419,7 +433,7 @@
       <div class="footer-1">
         <h1><a href="index.html">Trang Chủ</a></h1>
         <a href="index2.html">Kỹ Năng</a>
-        <a href="student.html"></a>
+        <a href="index1.html">Đăng ký thành viên</a>
         <a></a>
         <a></a>
         <a></a>
@@ -463,21 +477,7 @@
             });
         });
 
-
-        $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
-
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
-
     </script>
-
-  
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
