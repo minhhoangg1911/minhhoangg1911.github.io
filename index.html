@@ -49,7 +49,7 @@
                  <a href="index2.html">Kỹ Năng</a>
                 <a href="student.html"></a>
             </nav>
-            <button class="navbar-toggler">
+            <button class="menu-">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -456,6 +456,17 @@
       ],
             });
         });
+        
+          $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
+    // toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
 
     </script>
 
