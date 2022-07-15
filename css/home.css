@@ -1,5 +1,3 @@
-
-
 @font-face {
     src: url(../fonts/Montserrat-Regular.ttf);
     font-family: MR;
@@ -147,7 +145,7 @@
 }
 
 .carousel {
-    background-image: url(/img/duatre.jpg);
+    background-image: url("/img/duatre.jpg");
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,6 +179,7 @@
 /* .carousel h1::before {
     content: "THE";
     color: green;
+
 } */
 
 /* .carousel h1::after {
@@ -230,6 +229,7 @@
 
 .portfolio {
     padding: 80px 0;
+    
 }
 
 .portfolio .title {
@@ -476,6 +476,7 @@
 
 /* phone (ngang) */
 
+
 @media screen and (max-width: 768px) {
     .header .container .navbar {
         display: none;
@@ -525,10 +526,15 @@
         width: 100%;
     } 
 
+    .footer .footer-contact {
+        width:100%;
+    }
+
 }
 
 .footer .container {
     background-color: lightblue;
+    /* width:100%; */
 }
 
 .footer .container .footer-layout {
@@ -609,14 +615,108 @@
   /* phong ngang */
 
 
-  
+  *{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
 
+.siderbar {
+    /* position: fixed; */
+    position:absolute;
+    right: -250px;
+    width:250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
 
+.siderbar.header-bar {
+    color: blue;
+}
 
-.menu-btn{
-    color: #111;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
+.siderbar ul a {
+    display:block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:red;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,1);
+    border-bottom: 1px solid black;
+}
+
+.siderbar ul i {
+    margin: 15px;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+.siderbar ul a li {
+    margin-right: 15px;
+}
+
+#check {
+    display:none;
+}
+label #btn, label #cancel {
+    position: absolute;
+    cursor:pointer;
+    background: #042331;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+label #btn {
+    right: 40px;
+    top: 25px;
+    font-size:35px;
+    color: red;
+    padding: 6px 12px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    right: -195px;
+    padding-bottom:30px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition:all .5s easy;
+    -webkit-transition:all .5s easy;
+    -moz-transition:all .5s easy;
+    -ms-transition:all .5s easy;
+    -o-transition:all .5s easy;
+}
+#check:checked ~ .siderbar {
+    right:0;
+
+}
+
+#check:checked ~ label #btn {
+    right:210px;
+    opacity:  0;
+    pointer-events: none;
+    
+}
+#check:checked ~ label #cancel {
+    right: 210px;
+    margin-right: 4px;
+    
 }
 
