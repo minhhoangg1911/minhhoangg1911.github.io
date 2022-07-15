@@ -1,3 +1,5 @@
+
+
 @font-face {
     src: url(../fonts/Montserrat-Regular.ttf);
     font-family: MR;
@@ -179,7 +181,6 @@
 /* .carousel h1::before {
     content: "THE";
     color: green;
-
 } */
 
 /* .carousel h1::after {
@@ -606,6 +607,18 @@
   /* tablet */
 
   /* phong ngang */
+
+
+  
+
+
+
+.menu-btn{
+    color: #111;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 @media (max-width: 768px){
     .menu-btn{
